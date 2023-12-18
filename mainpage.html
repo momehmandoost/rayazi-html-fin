@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Rayazi Bioinformatics Group</title>
+  </head>
+  <body>
+    <header
+      class="container-fluid position-fixed position-absolute back-blur top-0 z-in-header p-3"
+    >
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <img
+            width="200"
+            height="30"
+            class="img-fluid"
+            src="./assets/img/logo_dark.svg"
+          />
+          <ul class="ps-5 d-none d-lg-flex gap-3">
+            <a href="#"><li class="header-text p-2">About us</li></a>
+            <a href="#"><li class="header-text p-2">Our team</li></a>
+            <a href="#"><li class="header-text p-2">All articles</li></a>
+            <a href="#"><li class="header-text p-2">Contact</li></a>
+          </ul>
+
+          <div
+            class="d-none d-lg-flex align-items-center justify-content-center"
+          >
+            <button
+              class="ms-4 button-login button-text ps-4 pt-2 pe-4 pb-2 rounded-2"
+            >
+              Login
+            </button>
+            <button
+              class="ms-4 button-text button-register ps-4 pt-2 pe-4 pb-2 rounded-2"
+            >
+              Sign up
+            </button>
+          </div>
+          <!-- hamburger -->
+          <div id="hamburger">
+            <i
+              class="fa fa-bars hamburger-icon bg-primary text-white p-2 rounded-3 d-flex d-lg-none"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid position-relative">
+      <div class="menu-open hidden2" id="menu-show">
+        <ul class="w-100">
+          <li class="h2">About us</li>
+          <li class="h2">Our team</li>
+          <li class="h2">All articles</li>
+          <li class="h2">Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <!-- hero section -->
+      <div class="container">
+        <div class="row m-7">
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div>
+              <h1 class="h1-light text-center text-lg-start">
+                Bioinformatics Research
+              </h1>
+              <h1 class="h1 pb-4 text-center text-lg-start">Group "rayazi"</h1>
+              <p class="p w-0 w-300 pb-4 text-center text-lg-start">
+                Boost efficiency, save time & money with post meeting surveys.
+              </p>
+              <div
+                class="d-flex justify-content-md-start justify-content-center"
+              >
+                <button
+                  class="button-gradient ps-5 pt-3 pe-5 pb-3 rounded-2 position-relative"
+                >
+                  <div
+                    class="position-absolute pt-3 text-white button-gradient-hover inset-0 rounded-2"
+                  >
+                    JOIN US
+                  </div>
+                  JOIN US
+                </button>
+                <button
+                  class="ms-4 button-text button-register ps-5 pt-3 pe-5 pb-3 rounded-2"
+                >
+                  LOGIN
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="img-fluid mt-5 mt-md-0" src="./assets/img/pic-2.svg" />
+          </div>
+        </div>
+      </div>
+      <!-- introduction section -->
+      <div class="container m-6">
+        <div>
+          <div class="row">
+            <h1
+              class="d-flex justify-content-center h1 section-header position-relative pt-5 pb-4"
+            >
+              How it works?
+            </h1>
+          </div>
+          <div class="row pt-4 pb-4">
+            <div
+              class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="icon display-5 m-4">calendar_month</span>
+              <h3 class="h3">Click Google integration</h3>
+              <p class="p text-center ms-4 me-4 mt-3">
+                Get access to your Google account and get access to your Google
+                calendar.
+              </p>
+            </div>
+            <div
+              class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="icon display-5 m-4">face</span>
+              <h3 class="h3">Customization</h3>
+              <p class="p text-center ms-4 me-4 mt-3">
+                Whatever the goals of your team or organization, create a survey
+                to better help you understand the minds of those involved.
+              </p>
+            </div>
+            <div
+              class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+            >
+              <span class="icon display-5 m-4">drafts</span>
+              <h3 class="h3">Automation</h3>
+              <p class="p text-center ms-4 me-4 mt-3">
+                Automatically triggered emails obtain survey feedback. Wait for
+                meeting data to be cleanly organized in your dashboard.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about section -->
+      <div class="container-fluid bg-dark">
+        <div class="container m-6">
+          <div class="row">
+            <h1
+              class="d-flex justify-content-center h1 pt-5 pb-4 section-header position-relative"
+            >
+              About us
+            </h1>
+          </div>
+          <div class="row p-5">
+            <div class="col-12 col-lg-8 d-flex flex-column">
+              <p class="p ms-4 me-4 mt-3">
+                At Rayazi Bioinformatics Research Group, we’re driven by a
+                relentless pursuit : advancing the frontiers of bioinformatics
+                to unravel the mysteries encoded within biological data.
+              </p>
+              <p class="p text-left ms-4 me-4 mt-1">What Sets Us Apart:</p>
+              <ul class="ul-special ms-5 me-4 mt-1">
+                <li>Interdisciplinary Excellence</li>
+                <li>Innovation and Exploration</li>
+                <li>Impactful Solutions</li>
+                <li>Have the right attendees in the room</li>
+                <li>
+                  Have clear action items [who, what, when] at the end of the
+                  meeting
+                </li>
+              </ul>
+              <p class="p text-left ms-4 me-4 mt-4">
+                Rate It was created to help leaders and managers have epic
+                meetings that aren’t wasting anyone’s time. Our mission is
+                clear: to harness the power of bioinformatics to drive
+                innovation in life sciences.
+              </p>
+            </div>
+            <div
+              class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                width="320"
+                height="100"
+                class="mt-4 mt-lg-1"
+                src="./assets/img/logo_dark.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- members section -->
+      <div class="container m-6">
+        <div class="row m-6">
+          <h1
+            class="d-flex justify-content-center h1 section-header position-relative pt-5 pb-4"
+          >
+            Members
+          </h1>
+        </div>
+        <div class="row pt-4">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center pt-3"
+          >
+            <div
+              class="card-fac p-4 rounded-3 d-flex flex-column align-items-center w-75"
+            >
+              <img
+                width="270"
+                height="200"
+                src="./assets/img/fac1.png"
+                alt="john"
+              />
+              <h3 class="h3 text-white pt-3">MIKE JAMES</h3>
+              <p class="p text-white text-center">
+                Professor of university of UCLA
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center pt-3"
+          >
+            <div
+              class="card-fac p-4 rounded-3 d-flex flex-column align-items-center w-75"
+            >
+              <img
+                width="270"
+                height="200"
+                src="./assets/img/fac2.jpg"
+                alt="john"
+              />
+              <h3 class="h3 text-white pt-3">JOHN DOE</h3>
+              <p class="p text-white text-center">
+                Professor of university of Utah
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center pt-3"
+          >
+            <div
+              class="card-fac p-4 rounded-3 d-flex flex-column align-items-center justify-content-center w-75"
+            >
+              <img
+                width="270"
+                height="200"
+                src="./assets/img/fac3.png"
+                alt="john"
+              />
+              <h3 class="h3 text-white pt-3">ALEX JONES</h3>
+              <p class="p text-white text-center">
+                Professor of university of Minesota
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Now -->
+      <div class="container-fluid m-6">
+        <div class="row d-none bg-dark d-md-flex pt-5 pb-5 ps-4 pe-4">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h2 class="h2 w-75 p-5">Send out your first request today!</h2>
+              <button
+                class="ms-4 button-text button-register ps-5 pt-3 pe-5 pb-3 rounded-2 ms-5"
+              >
+                LOGIN
+              </button>
+            </div>
+            <img
+              class="img-fluid"
+              width="300"
+              height="250"
+              src="./assets/img/Pattern.png"
+              alt="pattern"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- blog -->
+      <div class="container m-6">
+        <div>
+          <div class="row">
+            <h1
+              class="d-flex justify-content-center h1 pt-5 pb-4 section-header position-relative"
+            >
+              All Articles
+            </h1>
+            <p class="p text-center ps-5 pe-5">
+              How many hours are you and your team wasting in meetings that
+              aren’t adding to your productivity? In a 2017 survey of office
+              workers by the Harvard Business Review, key findings brought to
+              light how useless meetings can actually be.
+            </p>
+          </div>
+          <div class="grid-container">
+            <div class="featured grid-one">
+              <a href="/categories/furnitures"
+                ><div id="img1" class="lil-overlay"></div>
+                <img src="./assets/img/featured/post4.jpg" alt="img1" />
+                <p class="main-description">
+                  How to prevent and protect your family from Carbon monoxide
+                </p>
+              </a>
+              <div
+                class="position-absolute text-featured top-0 ms-4 mt-4 bg-white ps-3 pt-1 pe-3 pb-1 rounded-pill text-primary"
+              >
+                featured
+              </div>
+            </div>
+            <div class="featured grid-two">
+              <a href="/categories/skin-care"
+                ><div id="img2" class="lil-overlay"></div>
+                <img src="./assets/img/featured/post1.jpg" alt="img2" />
+                <p class="main-description">
+                  Motherhood is the hardest and the best job ever
+                </p></a
+              >
+              <div
+                class="position-absolute text-featured top-0 ms-4 mt-4 bg-white ps-3 pt-1 pe-3 pb-1 rounded-pill text-primary"
+              >
+                featured
+              </div>
+            </div>
+            <div class="featured grid-four">
+              <a href="/categories/kitchen"
+                ><div id="img3" class="lil-overlay"></div>
+                <img src="./assets/img/featured/post2.jpg" alt="img3" />
+                <p class="main-description">Future of Work</p></a
+              >
+              <div
+                class="position-absolute text-featured top-0 ms-3 mt-3 bg-white ps-3 pt-1 pe-3 pb-1 rounded-pill text-primary"
+              >
+                featured
+              </div>
+            </div>
+            <div class="featured grid-four-low">
+              <a href="/categories/electronics"
+                ><div id="img4" class="lil-overlay"></div>
+                <img src="./assets/img/featured/post3.jpg" alt="img4" />
+                <p class="main-description">Future of Data</p></a
+              >
+              <div
+                class="position-absolute text-featured top-0 ms-3 mt-3 bg-white ps-3 pt-1 pe-3 pb-1 rounded-pill text-primary"
+              >
+                featured
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="container-fluid bg-primary">
+        <div class="container p-5">
+          <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-6 pb-4">
+              <img
+                class="img-fluid"
+                src="./assets/img/logo_light.svg"
+                width="290"
+                h="150"
+                alt="rayazi"
+              />
+              <p class="p pt-4 text-white text-light footer-font">
+                We approach each research endeavor with meticulous attention to
+                detail, leveraging state-of-the-art computational methodologies,
+                machine learning, and data analysis techniques.
+              </p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-3"
+              >
+                <a href="/"
+                  ><i
+                    class="fa-brands fa-linkedin-in text-white social-icons"
+                  ></i
+                ></a>
+                <a href="/"
+                  ><i class="fa-brands fa-twitter text-white social-icons"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Home</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <a href="/"><li class="p submenu-text">What is it</li></a>
+                <a href="/"><li class="p submenu-text">How its works</li></a>
+                <a href="/"
+                  ><li class="p submenu-text">Why it’s important</li></a
+                >
+                <a href="/"><li class="p submenu-text">Pricing</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Home</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <a href="/"><li class="p submenu-text">About</li></a>
+                <a href="/"><li class="p submenu-text">Blog</li></a>
+                <a href="/"><li class="p submenu-text">Careers</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Home</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <a href="/"
+                  ><li class="p submenu-text">Terms & Conditions</li></a
+                >
+                <a href="/"><li class="p submenu-text">Privacy & Policy</li></a>
+                <a href="/"><li class="p submenu-text">Contact</li></a>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Help</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <a href="/"><li class="p submenu-text">FAQs</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>

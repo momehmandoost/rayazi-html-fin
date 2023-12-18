@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Rayazi Bioinformatics Group</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- profile section -->
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-lg-3 col-12 pb-4 bg-dark d-flex flex-column p-4 justify-content-center align-items-center"
+          >
+            <a href="/"><img class="" src="./assets/img/logo_dark.svg" /></a>
+            <img
+              class="rounded-circle img-fluid p-5"
+              width="350"
+              height="350"
+              src="./assets/img/fac3.png"
+            />
+            <h2 class="h2 text-primary">ALEX JONES</h2>
+            <p class="p text-primary w-75 text-center">
+              M.Sc in Biophysics Utah University
+            </p>
+            <div
+              class="p py-2 bg-primary text-white py-2 px-3 rounded-pill m-3"
+            >
+              University faculty
+            </div>
+            <div class="d-flex gap-3 mb-5 mt-3">
+              <a href="/"
+                ><i
+                  class="fa-brands fa-linkedin-in text-primary social-icons"
+                ></i
+              ></a>
+              <a href="/"
+                ><i class="fa-brands fa-twitter text-primary social-icons"></i
+              ></a>
+            </div>
+            <div>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <a href="/">
+                  <div class="ps-4 p pt-3 pe-4 pb-3 rounded-3 button-side mb-3">
+                    <i class="fa-regular fa-file pe-2"></i>
+                    Submit a Proposal
+                  </div>
+                </a>
+                <a href="/">
+                  <div class="ps-5 p pt-3 pe-5 pb-4 button-dark">
+                    <i class="fa-solid fa-file-invoice pe-2"></i>
+                    Proposals
+                  </div>
+                </a>
+                <a href="/">
+                  <div class="ps-5 p pt-3 pe-5 pb-4 button-dark">
+                    <i class="fa-solid fa-file-contract pe-2"></i>
+                    Projects
+                  </div>
+                </a>
+                <a href="/">
+                  <div class="ps-5 p pt-3 pe-5 pb-4 button-dark">
+                    <i class="fa-solid fa-money-bill pe-2"></i>
+                    Payments
+                  </div>
+                </a>
+                <a href="/">
+                  <div class="ps-5 p pt-3 pe-5 pb-4 button-dark mb-5">
+                    <i class="fa-solid fa-gear"></i>
+                    Edit Profile
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-lg-9 col-12 p-5 d-flex flex-column">
+            <div
+              class="d-flex justify-content-between align-items-center position-relative"
+            >
+              <h2 class="h2">Proposals</h2>
+              <!-- notification -->
+
+              <div
+                class="d-flex justify-content-center align-items-center gap-4"
+              >
+                <div id="notif" class="cursor-point">
+                  <i class="fa-regular fa-bell social-icons button-dark"></i>
+                </div>
+
+                <img
+                  width="40"
+                  height="40"
+                  class="rounded-circle img-shadow"
+                  src="./assets/img/fac3.png"
+                />
+                <div class="cursor-point" id="setting">
+                  <i
+                    class="fa-solid fa-ellipsis-vertical social-icons button-dark"
+                  ></i>
+                </div>
+              </div>
+
+              <!-- end-notification -->
+              <div
+                class="position-absolute notification-badge bg-white img-shadow p-4 rounded-3 p hidden2"
+                id="show-notif"
+              >
+                There is no notification
+              </div>
+              <div
+                class="position-absolute notification-menu bg-white img-shadow p-4 rounded-3 p hidden2"
+                id="show-setting"
+              >
+                <ul>
+                  <li class="border-bottom p-1 border-2">Profile</li>
+                  <li class="border-bottom p-1 border-2">Edit</li>
+                  <li class="p-1">Setting</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center m-6 flex-column"
+            >
+              <img
+                class="p-3 img-fluid"
+                width="300"
+                height="300"
+                src="./assets/img/Group.png"
+              />
+              <p class="button-dark w-50 text-center mt-4">
+                Currently you don’t have any proposal synced on your dashboard.
+                Add a new one.
+              </p>
+              <a href="/">
+                <div
+                  class="ps-3 p pt-2 pe-3 pb-2 rounded-3 button-side mb-3 cursor-pointer"
+                >
+                  Add new proposoal
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="container-fluid bg-primary">
+        <div class="container p-5">
+          <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-6 pb-4">
+              <img
+                class="img-fluid"
+                src="./assets/img/logo_light.svg"
+                width="290"
+                h="150"
+                alt="rayazi"
+              />
+              <p class="p pt-4 text-white text-light footer-font">
+                We approach each research endeavor with meticulous attention to
+                detail, leveraging state-of-the-art computational methodologies,
+                machine learning, and data analysis techniques.
+              </p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-3"
+              >
+                <i class="fa-brands fa-linkedin-in text-white social-icons"></i>
+                <i class="fa-brands fa-twitter text-white social-icons"></i>
+              </div>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Home</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <li class="p submenu-text">What is it</li>
+                <li class="p submenu-text">How its works</li>
+                <li class="p submenu-text">Why it’s important</li>
+                <li class="p submenu-text">Pricing</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Home</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <li class="p submenu-text">About</li>
+                <li class="p submenu-text">Blog</li>
+                <li class="p submenu-text">Careers</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Home</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <li class="p submenu-text">Terms & Conditions</li>
+                <li class="p submenu-text">Privacy & Policy</li>
+                <li class="p submenu-text">Contact</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-6 pb-4">
+              <h3 class="h3 text-white pb-4">Help</h3>
+              <ul class="d-flex flex-column gap-4 p">
+                <li class="p submenu-text">FAQs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>

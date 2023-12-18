@@ -1,0 +1,376 @@
+:root {
+  --primary: #133b62;
+  --primaryhover: #0e2841;
+  --secondary: #b41c28;
+  --bg-dark: #f5f6fa;
+  --text-dark: #aab2c8;
+  --text-dark-hover: #666973;
+  --linear-gradient-main: linear-gradient(90deg, #133b62 0%, #b41c28 100%);
+  --linear-gradient-main-hover: linear-gradient(
+    90deg,
+    #b41c28 0%,
+    #133b62 100%
+  );
+}
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+.bg-dark {
+  background-color: var(--bg-dark) !important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: none;
+}
+a {
+  color: black !important;
+  text-decoration: none;
+}
+a li {
+  transition: all 200ms ease-in, color 500ms ease-in;
+}
+a:hover {
+  color: #174f87;
+}
+a li:hover {
+  color: #1d558e;
+}
+.z-in-header {
+  z-index: 800000;
+}
+.back-blur {
+  backdrop-filter: blur(10px);
+}
+.m-7 {
+  margin-top: 10rem;
+}
+.h1 {
+  font-family: "Rubik";
+  font-size: 48px;
+  font-weight: 900;
+}
+.h1-light {
+  font-family: "Rubik";
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: -10px;
+}
+.h2 {
+  font-family: "Rubik";
+  font-size: 36px;
+  font-weight: 700;
+}
+.h3 {
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 700;
+}
+.p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+.pt-6 {
+  padding-top: 10rem;
+}
+.m-6 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.button-register {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px #5930ff59;
+  transition: all 0.3s;
+}
+
+.button-register:hover {
+  box-shadow: 0 10px 15px var(--primary);
+  background-color: var(--primaryhover);
+}
+.button-text {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 700;
+}
+.header-text {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 500;
+}
+.button-background {
+  background: var(--linear-gradient-main);
+}
+.button-outline {
+  background-color: var(--primary);
+  color: white;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+.button-outline:hover {
+  background-color: rgb(198, 198, 198);
+  color: var(--primary);
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+.button-stroke {
+  background-color: white;
+  color: var(--primary);
+  border: 3px solid var(--primary);
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+
+.button-stroke:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.button-login {
+  background-color: white;
+  color: var(--primary);
+
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+.button-login:hover {
+  background-color: var(--bg-dark);
+  color: var(--primary);
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+.w-300 {
+  width: 300px;
+}
+.button-gradient {
+  font-family: "Rubik";
+  font-weight: 700;
+  background: var(--linear-gradient-main);
+  transition: all 200ms ease-in;
+  color: white;
+  box-shadow: 0 10px 15px #8c8c8c;
+}
+.button-gradient-hover {
+  background: var(--linear-gradient-main-hover);
+  opacity: 0;
+  transition: all 800ms ease-in;
+  color: white;
+}
+.button-gradient-hover:hover {
+  opacity: 1;
+}
+.inset-0 {
+  inset: 0;
+}
+.section-header::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+}
+.icon {
+  font-family: "Material Icons";
+  color: var(--primary);
+}
+.ul-special {
+  list-style: disc;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+.w-300 {
+  width: 300px;
+}
+.card-fac {
+  background-color: var(--primary);
+  box-shadow: 0 10px 15px #5930ff59;
+  transition: all 0.5s ease-in-out;
+}
+.card-fac:hover {
+  box-shadow: 0 10px 15px var(--primary);
+  background-color: var(--primaryhover);
+}
+
+@media screen and (max-width: 768px) {
+  .w-300 {
+    width: 100%;
+  }
+}
+.social-icons {
+  font-size: 25px;
+}
+.footer-font {
+  font-size: 15px;
+}
+.submenu-text {
+  color: #7a7a7a;
+}
+.grid-container {
+  grid-gap: 1.3rem;
+  display: grid;
+  gap: 1.3rem;
+  grid-template-areas:
+    "one two four    "
+    "one two four-low";
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 32rem;
+  margin-top: 1.3rem;
+}
+.grid-one {
+  grid-area: one;
+}
+.featured {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.grid-two {
+  grid-area: two;
+}
+.grid-four {
+  grid-area: four;
+}
+.grid-four-low {
+  grid-area: four-low;
+}
+.lil-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-in;
+  width: 100%;
+}
+.featured img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+.main-description {
+  bottom: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  left: 2rem;
+  position: absolute;
+  font-family: "Rubik";
+}
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-featured {
+  font-family: "Rubik";
+  font-size: 15px;
+  font-weight: 400;
+}
+@media (max-width: 1350px) {
+  .grid-container {
+    grid-gap: 13px;
+    display: grid;
+    gap: 13px;
+    grid-template-areas:
+      "one  two     "
+      "four four-low";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 500px;
+  }
+  .main-description {
+    font-size: 1.2rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+.hamburger-icon {
+  font-size: 25px;
+}
+
+.w-100 {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-open {
+  background: white;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  margin-left: -12px;
+  z-index: 9000000;
+  margin-top: -68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.hidden2 {
+  display: none;
+  opacity: 0;
+}
+
+.button-side {
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.button-side:hover {
+  background-color: var(--primaryhover);
+  color: white;
+  scale: 1.1;
+}
+
+.button-dark {
+  color: var(--text-dark);
+  transition: all 0.5s ease-in;
+}
+.button-dark:hover {
+  color: var(--text-dark-hover);
+  scale: 1.1;
+}
+.img-shadow {
+  fill: #c4c4c4;
+
+  filter: drop-shadow(1px 4px 10px rgba(170, 178, 200, 0.45));
+}
+.notification-badge {
+  top: 65px;
+  right: 10px;
+}
+.notification-menu {
+  top: 65px;
+  right: 0px;
+}
+.show {
+  display: flex !important;
+}
+.cursor-point {
+  cursor: pointer;
+}
