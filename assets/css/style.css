@@ -73,6 +73,10 @@ a li:hover {
   background: var(--primaryhover);
   border: none;
 }
+.btn-primary:focus {
+  background: var(--primaryhover) !important;
+  border: none;
+}
 .btn-secondary {
   color: white !important;
 }
