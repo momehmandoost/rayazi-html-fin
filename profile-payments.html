@@ -83,8 +83,7 @@
     <main>
       <!-- profile section -->
       <div class="container-fluid container-lg my-6">
-        <div class="row">
-          <!-- left -->
+        <div class="row d-flex align-items-start justify-content-start">
           <div
             class="col-lg-3 col-12 py-4 bg-dark d-flex flex-column justify-content-center align-items-center rounded"
           >
@@ -128,7 +127,7 @@
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <a href="/">
-                  <div class="ps-4 p pt-3 pe-4 pb-3 rounded-3 button-side">
+                  <div class="ps-5 p-subprofile pt-3 pe-5 pb-1 button-dark">
                     <i class="fa-regular fa-file pe-2"></i>
                     Submit a Proposal
                   </div>
@@ -146,9 +145,14 @@
                   </div>
                 </a>
                 <a href="/">
-                  <div class="ps-5 p-subprofile pt-3 pe-5 pb-2 button-dark">
+                  <div
+                    class="ps-4 p pt-2 pe-4 pb-2 rounded-3 button-side d-flex justify-content-center align-items-center"
+                  >
                     <i class="fa-solid fa-money-bill pe-2"></i>
                     Payments
+                    <div class="bg-primary ms-2 p-1 text-white rounded-1">
+                      1
+                    </div>
                   </div>
                 </a>
                 <a href="/">
@@ -164,72 +168,44 @@
           </div>
           <!-- right -->
           <div class="col-lg-9 col-12 d-flex flex-column">
-            <div
-              class="d-flex justify-content-between align-items-center position-relative"
-            >
-              <h2 class="h2"></h2>
-              <!-- notification -->
-
-              <div
-                class="d-flex justify-content-center align-items-center gap-4"
-              >
-                <div id="notif" class="cursor-point">
-                  <i class="fa-regular fa-bell social-icons button-dark"></i>
+            <!-- Aboutme -->
+            <div class="bg-dark p-5">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="h1 text-primary">Payments</h1>
                 </div>
-
-                <img
-                  width="40"
-                  height="40"
-                  class="rounded-circle img-shadow"
-                  src="./assets/img/fac3.png"
-                />
-                <div class="cursor-point" id="setting">
-                  <i
-                    class="fa-solid fa-ellipsis-vertical social-icons button-dark"
-                  ></i>
+                <div class="col-12">
+                  <table class="table table-striped content table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a
+                            href="http://127.0.0.1:8000/profile/payments/payment/1"
+                          >
+                            Payment for webinar
+                          </a>
+                        </td>
+                        <td>0 Toomans</td>
+                        <td>pending</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-
-              <!-- end-notification -->
-              <div
-                class="position-absolute notification-badge bg-white img-shadow p-4 rounded-3 p hidden2"
-                id="show-notif"
-              >
-                There is no notification
-              </div>
-              <div
-                class="position-absolute notification-menu bg-white img-shadow p-4 rounded-3 p hidden2"
-                id="show-setting"
-              >
-                <ul>
-                  <li class="border-bottom p-1 border-2">Profile</li>
-                  <li class="border-bottom p-1 border-2">Edit</li>
-                  <li class="p-1">Setting</li>
-                </ul>
-              </div>
+              <!-- form -->
             </div>
-            <div
-              class="d-flex align-items-center justify-content-center m-6 flex-column"
-            >
-              <img
-                class="p-3 img-fluid"
-                width="300"
-                height="300"
-                src="./assets/img/Group.png"
-              />
-              <p class="button-dark w-50 text-center mt-4">
-                Currently you don’t have any proposal synced on your dashboard.
-                Add a new one.
-              </p>
-              <a href="/">
-                <div
-                  class="ps-3 p pt-2 pe-3 pb-2 rounded-3 mb-3 cursor-pointer text-primary"
-                >
-                  Add new proposoal
-                </div>
-              </a>
-            </div>
+            <!-- end-aboutme -->
+
+            <!-- end-projects -->
           </div>
+          <!-- end-left -->
         </div>
       </div>
       <!-- footer -->

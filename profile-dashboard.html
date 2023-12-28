@@ -83,8 +83,7 @@
     <main>
       <!-- profile section -->
       <div class="container-fluid container-lg my-6">
-        <div class="row">
-          <!-- left -->
+        <div class="row d-flex align-items-start justify-content-start">
           <div
             class="col-lg-3 col-12 py-4 bg-dark d-flex flex-column justify-content-center align-items-center rounded"
           >
@@ -128,7 +127,7 @@
                 class="d-flex flex-column justify-content-center align-items-center"
               >
                 <a href="/">
-                  <div class="ps-4 p pt-3 pe-4 pb-3 rounded-3 button-side">
+                  <div class="ps-4 p pt-2 pe-4 pb-2 rounded-3 button-side">
                     <i class="fa-regular fa-file pe-2"></i>
                     Submit a Proposal
                   </div>
@@ -164,79 +163,134 @@
           </div>
           <!-- right -->
           <div class="col-lg-9 col-12 d-flex flex-column">
-            <div
-              class="d-flex justify-content-between align-items-center position-relative"
-            >
-              <h2 class="h2"></h2>
-              <!-- notification -->
-
-              <div
-                class="d-flex justify-content-center align-items-center gap-4"
-              >
-                <div id="notif" class="cursor-point">
-                  <i class="fa-regular fa-bell social-icons button-dark"></i>
-                </div>
-
-                <img
-                  width="40"
-                  height="40"
-                  class="rounded-circle img-shadow"
-                  src="./assets/img/fac3.png"
-                />
-                <div class="cursor-point" id="setting">
-                  <i
-                    class="fa-solid fa-ellipsis-vertical social-icons button-dark"
-                  ></i>
-                </div>
-              </div>
-
-              <!-- end-notification -->
-              <div
-                class="position-absolute notification-badge bg-white img-shadow p-4 rounded-3 p hidden2"
-                id="show-notif"
-              >
-                There is no notification
-              </div>
-              <div
-                class="position-absolute notification-menu bg-white img-shadow p-4 rounded-3 p hidden2"
-                id="show-setting"
-              >
-                <ul>
-                  <li class="border-bottom p-1 border-2">Profile</li>
-                  <li class="border-bottom p-1 border-2">Edit</li>
-                  <li class="p-1">Setting</li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="d-flex align-items-center justify-content-center m-6 flex-column"
-            >
-              <img
-                class="p-3 img-fluid"
-                width="300"
-                height="300"
-                src="./assets/img/Group.png"
-              />
-              <p class="button-dark w-50 text-center mt-4">
-                Currently you don’t have any proposal synced on your dashboard.
-                Add a new one.
+            <!-- Aboutme -->
+            <div class="bg-dark p-5">
+              <h1 class="h1 text-primary">About me</h1>
+              <p class="p ps-4 text-primary">
+                Hi there, I'm Mohammad Mehmandoost, and I'm thrilled to be a
+                member of Rayazi, a bioinformatic research group dedicated to
+                advancing the field through cutting-edge computational methods.
+                As part of this dynamic community, I'm excited to contribute to
+                ongoing research projects and learn from my talented colleagues.
+                I hold a B.Sc in Water from Ahvaz University, which has equipped
+                me with the knowledge and skills to tackle complex bioinformatic
+                challenges. I'm always eager to connect with other members of
+                the group and collaborate on new projects.
               </p>
-              <a href="/">
-                <div
-                  class="ps-3 p pt-2 pe-3 pb-2 rounded-3 mb-3 cursor-pointer text-primary"
-                >
-                  Add new proposoal
-                </div>
-              </a>
             </div>
+            <!-- end-aboutme -->
+            <!-- stats -->
+            <div class="bg-dark mt-4 p-5">
+              <h1 class="h1 text-primary">Stats</h1>
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-3 bg-success p-4"
+                  >
+                    <i class="fa-solid fa-circle-check staticon text-white"></i>
+                    <div class="d-flex flex-column">
+                      <p class="h2 text-white">0</p>
+                      <p class="p text-white">Projects completed</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-3 bg-warning p-4"
+                  >
+                    <i class="fa-solid fa-spinner staticon text-white"></i>
+                    <div class="d-flex flex-column text-white">
+                      <p class="h2 text-white">0</p>
+                      <p class="p text-white">Projects in progress</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end-stats -->
+            <!-- projects -->
+
+            <div class="bg-dark mt-4 p-5">
+              <h1 class="h1 text-primary pb-4">Projects</h1>
+              <!-- projects1 -->
+              <div
+                class="d-flex flex-column justify-content-start align-items-start bg-white p-2 p-md-5 mb-4"
+              >
+                <div
+                  class="d-flex flex-column pb-3 justify-content-start align-items-start"
+                >
+                  <h2 class="h2 text-primary">
+                    Great Ideas in Computational Biology
+                  </h2>
+                  <div class="p p-1 px-3 bg-primary text-white">
+                    In-progress
+                  </div>
+                </div>
+                <p class="p text-primary pb-2">
+                  This 12-unit course provides an introduction to many of the
+                  great ideas that have formed the foundation for the
+                  transformation of the life sciences into a fully-fledged
+                  computational discipline. This gateway course is intended as a
+                  first exposure to computational biology for first-year
+                  undergraduates in the School of Computer Science, although it
+                  is open to other quantitatively and computationally capable
+                  students who are interested in exploring the field. By
+                  completing this course, students will encounter a handful of
+                  fundamental algorithmic approaches deriving straight from very
+                  widely cited primary literature, much of which has been
+                  published in recent years.
+                </p>
+                <div class="bg-primary text-primary mw-100 rounded-pill">
+                  <p class="text-white px-3 py-2">Show more</p>
+                </div>
+              </div>
+              <!-- end-projects1 -->
+              <!-- projects2 -->
+              <div
+                class="d-flex flex-column justify-content-start align-items-start bg-white p-2 p-md-5"
+              >
+                <div
+                  class="d-flex flex-column pb-3 justify-content-start align-items-start"
+                >
+                  <h2 class="h2 text-primary">
+                    Great Ideas in Computational Biology
+                  </h2>
+                  <div class="p p-1 px-3 bg-primary text-white">
+                    In-progress
+                  </div>
+                </div>
+                <p class="p text-primary pb-2">
+                  This 12-unit course provides an introduction to many of the
+                  great ideas that have formed the foundation for the
+                  transformation of the life sciences into a fully-fledged
+                  computational discipline. This gateway course is intended as a
+                  first exposure to computational biology for first-year
+                  undergraduates in the School of Computer Science, although it
+                  is open to other quantitatively and computationally capable
+                  students who are interested in exploring the field. By
+                  completing this course, students will encounter a handful of
+                  fundamental algorithmic approaches deriving straight from very
+                  widely cited primary literature, much of which has been
+                  published in recent years.
+                </p>
+                <div class="bg-primary text-primary mw-100 rounded-pill">
+                  <p class="text-white px-3 py-2">Show more</p>
+                </div>
+              </div>
+              <!-- end-projects2 -->
+            </div>
+
+            <!-- end-projects -->
           </div>
+          <!-- end-left -->
         </div>
       </div>
       <!-- footer -->
       <div class="container-fluid bg-primary">
         <div class="container p-5">
           <div class="row d-flex justify-content-between">
-            <div class="col-lg-4 col-6 pb-4">
+            <div class="col-lg-4 col-12 pb-4">
               <img
                 class="img-fluid"
                 src="./assets/img/logo_light.svg"
@@ -244,7 +298,7 @@
                 h="150"
                 alt="rayazi"
               />
-              <p class="p pt-4 text-white text-light footer-font">
+              <p class="p pt-4 text-white text-light footer-font mb-3">
                 We approach each research endeavor with meticulous attention to
                 detail, leveraging state-of-the-art computational methodologies,
                 machine learning, and data analysis techniques.

@@ -35,7 +35,7 @@
           <img
             width="200"
             height="30"
-            class="img-fluid"
+            class="img-fluid d-none d-lg-flex"
             src="./assets/img/logo_dark.svg"
           />
           <ul class="ps-5 d-none d-lg-flex gap-3">
@@ -45,26 +45,55 @@
             <a href="#"><li class="header-text p-2">Contact</li></a>
           </ul>
 
+          <!-- notif -->
           <div
-            class="d-none d-lg-flex align-items-center justify-content-center"
+            class="d-flex justify-content-between align-items-center position-relative"
           >
-            <button
-              class="ms-4 button-login button-text ps-4 pt-2 pe-4 pb-2 rounded-2"
+            <!-- notification -->
+
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <div id="notif" class="cursor-point">
+                <i class="fa-regular fa-bell social-icons button-dark"></i>
+              </div>
+
+              <img
+                width="40"
+                height="40"
+                class="rounded-circle img-shadow"
+                src="./assets/img/fac3.png"
+              />
+              <div class="cursor-point" id="setting">
+                <i
+                  class="fa-solid fa-ellipsis-vertical social-icons button-dark"
+                ></i>
+              </div>
+            </div>
+
+            <!-- end-notification -->
+            <div
+              class="position-absolute notification-badge bg-white img-shadow p-3 rounded-3 p hidden2"
+              id="show-notif"
             >
-              Login
-            </button>
-            <button
-              class="ms-4 button-text button-register ps-4 pt-2 pe-4 pb-2 rounded-2"
+              There is no notification.
+            </div>
+            <div
+              class="position-absolute notification-menu bg-white img-shadow p-4 rounded-3 p hidden2"
+              id="show-setting"
             >
-              Sign up
-            </button>
+              <ul>
+                <li class="border-bottom p-1 border-2">Profile</li>
+                <li class="border-bottom p-1 border-2">Edit</li>
+                <li class="p-1">Setting</li>
+              </ul>
+            </div>
           </div>
+          <!-- endnotif -->
+
           <!-- hamburger -->
-          <div id="hamburger">
-            <i
-              class="fa fa-bars hamburger-icon bg-primary text-white p-2 rounded-3 d-flex d-lg-none"
-            ></i>
-          </div>
+
+          <i
+            class="fa fa-bars hamburger-icon bg-primary text-white p-2 rounded-3 d-flex hamburger d-lg-none"
+          ></i>
         </div>
       </div>
     </header>
@@ -164,50 +193,6 @@
           </div>
           <!-- right -->
           <div class="col-lg-9 col-12 d-flex flex-column">
-            <div
-              class="d-flex justify-content-between align-items-center position-relative"
-            >
-              <h2 class="h2"></h2>
-              <!-- notification -->
-
-              <div
-                class="d-flex justify-content-center align-items-center gap-4"
-              >
-                <div id="notif" class="cursor-point">
-                  <i class="fa-regular fa-bell social-icons button-dark"></i>
-                </div>
-
-                <img
-                  width="40"
-                  height="40"
-                  class="rounded-circle img-shadow"
-                  src="./assets/img/fac3.png"
-                />
-                <div class="cursor-point" id="setting">
-                  <i
-                    class="fa-solid fa-ellipsis-vertical social-icons button-dark"
-                  ></i>
-                </div>
-              </div>
-
-              <!-- end-notification -->
-              <div
-                class="position-absolute notification-badge bg-white img-shadow p-4 rounded-3 p hidden2"
-                id="show-notif"
-              >
-                There is no notification
-              </div>
-              <div
-                class="position-absolute notification-menu bg-white img-shadow p-4 rounded-3 p hidden2"
-                id="show-setting"
-              >
-                <ul>
-                  <li class="border-bottom p-1 border-2">Profile</li>
-                  <li class="border-bottom p-1 border-2">Edit</li>
-                  <li class="p-1">Setting</li>
-                </ul>
-              </div>
-            </div>
             <div
               class="d-flex align-items-center justify-content-center m-6 flex-column"
             >

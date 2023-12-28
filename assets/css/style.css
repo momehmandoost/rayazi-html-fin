@@ -22,8 +22,27 @@
     url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
     url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
 }
+
+/* Applying the font to specific elements */
+body {
+  font-family: "SF Pro Display", sans-serif; /* Use the 'Surt' font family */
+}
 .bg-dark {
   background-color: var(--bg-dark) !important;
+}
+.bg-black-half {
+  background-color: #0000003d !important;
+}
+input {
+  font-family: "SF Pro Display";
+  border: none;
+}
+select {
+  border: none;
+  padding: 10px;
+}
+p {
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -46,6 +65,17 @@ a:hover {
 a li:hover {
   color: #1d558e;
 }
+.btn-primary {
+  background: var(--primary);
+  border: none;
+}
+.btn-primary:hover {
+  background: var(--primaryhover);
+  border: none;
+}
+.btn-secondary {
+  color: white !important;
+}
 .z-in-header {
   z-index: 800000;
 }
@@ -55,31 +85,64 @@ a li:hover {
 .m-7 {
   margin-top: 10rem;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary);
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--primary);
+}
 .h1 {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 500;
+  letter-spacing: -2.4px;
 }
 .h1-light {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: -10px;
+  letter-spacing: -2px;
 }
 .h2 {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .h3 {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: -0.7px;
 }
 .p {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: -0.1px;
+  margin: 0;
 }
 .pt-6 {
   padding-top: 10rem;
@@ -91,26 +154,46 @@ a li:hover {
 .bg-primary {
   background-color: var(--primary) !important;
 }
+.bold {
+  font-weight: 700;
+}
+.img-container {
+  overflow: hidden;
+}
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+}
+.white50 {
+  background-color: #ffffffe3 !important;
+}
+
+.image-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-container:hover .image-scale {
+  transform: scale(1.2);
+}
 .button-register {
   background-color: var(--primary);
   color: #fff;
   padding: 1.5rem 3rem;
   border-radius: 3px;
-  box-shadow: 0 10px 15px #5930ff59;
+
   transition: all 0.3s;
 }
 
 .button-register:hover {
-  box-shadow: 0 10px 15px var(--primary);
   background-color: var(--primaryhover);
 }
 .button-text {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 5700;
 }
 .header-text {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 18px;
   font-weight: 500;
 }
@@ -139,13 +222,13 @@ a li:hover {
   color: white;
 }
 .button-login {
-  background-color: white;
+  background-color: var(--bg-dark);
   color: var(--primary);
 
   transition: background-color 200ms ease-in, color 200ms ease-in;
 }
 .button-login:hover {
-  background-color: var(--bg-dark);
+  background-color: white;
   color: var(--primary);
   transition: background-color 200ms ease-in, color 200ms ease-in;
 }
@@ -153,8 +236,8 @@ a li:hover {
   width: 300px;
 }
 .button-gradient {
-  font-family: "Rubik";
-  font-weight: 700;
+  font-family: "SF Pro Display";
+  font-weight: 400;
   background: var(--linear-gradient-main);
   transition: all 200ms ease-in;
   color: white;
@@ -188,7 +271,7 @@ a li:hover {
 }
 .ul-special {
   list-style: disc;
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 18px;
   font-weight: 400;
 }
@@ -267,10 +350,10 @@ a li:hover {
   bottom: 2rem;
   color: #fff;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   left: 2rem;
   position: absolute;
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
 }
 #img1:hover,
 #img2:hover,
@@ -282,7 +365,7 @@ a li:hover {
   color: var(--primary) !important;
 }
 .text-featured {
-  font-family: "Rubik";
+  font-family: "SF Pro Display";
   font-size: 15px;
   font-weight: 400;
 }
@@ -314,6 +397,7 @@ a li:hover {
   flex-direction: column;
   align-items: center;
 }
+
 .menu-open {
   background: white;
   position: fixed;
@@ -334,6 +418,8 @@ a li:hover {
   display: none;
   opacity: 0;
 }
+
+/* profile */
 
 .button-side {
   background-color: var(--primary);
@@ -363,6 +449,14 @@ a li:hover {
 .notification-badge {
   top: 65px;
   right: 10px;
+  width: 350px;
+}
+@media screen and (max-width: 500px) {
+  .notification-badge {
+    top: 65px;
+    left: 20px;
+    width: 325px;
+  }
 }
 .notification-menu {
   top: 65px;
@@ -373,4 +467,21 @@ a li:hover {
 }
 .cursor-point {
   cursor: pointer;
+}
+.my-6 {
+  margin-top: 98px;
+  margin-bottom: 90px;
+}
+.mt-6 {
+  margin-top: 90px;
+}
+.p-subprofile {
+  font-size: 17px;
+}
+.fac-badge {
+  font-size: 13px;
+  font-weight: 600;
+}
+.staticon {
+  font-size: 50px;
 }
